@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Overpass:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+:root {
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    --light-hover: hsl(355, 100%, 74%);
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);  
+    /* font colors / sizes */
+    --light-weight: 300;
+    --bold-weight: 700;
+    --red-font: hsl(356, 100%, 66%);
+}
+
+.first-container {
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, var(--very-light-red) , var(--light-red));
+}
+
+.navbar,
+.left-nav,
+.right-nav {
+    display: flex;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0 150px 0;
+    justify-content: space-between;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    padding: 15px 0 0 50px;
+}
+
+.navigation-container p {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: var(--light-weight);
+    transform: all .8s ease;
+}
+
+.navigation-container p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: all .8s ease;
+}
+
+.login,
+.sign-up {
+    text-align: center;
+    padding: 15px 30px;
+    transition: all .3s ease;
+}
+
+.login:hover,
+.sign-up:hover {
+    cursor: pointer;
+    background-color: var(--light-hover);
+    border-radius: 50px;
+    transition: all .6s ease;
+}
+
+/* return here */
+.right-nav {
+    font-size: 14px;
+    font-weight: var(--light-weight);
+}
+
+/* return here */
+.login {
+    margin-right: 20px;
+}
