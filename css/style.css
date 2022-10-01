@@ -34,7 +34,7 @@
 .navbar {
     width: 80%;
     margin: 0 auto;
-    padding: 60px 0 150px 0;
+    padding: 60px 0 90px 0;
     justify-content: space-between;
 }
 
@@ -63,16 +63,22 @@
 }
 
 .login,
-.sign-up {
+.sign-up,
+.start-btn,
+.learn-more-btn {
     text-align: center;
     padding: 15px 30px;
     transition: all .3s ease;
 }
 
 .login:hover,
-.sign-up:hover {
+.sign-up:hover,
+.start-btn:hover,
+.learn-more-btn:hover {
     cursor: pointer;
+    color: #fff;
     background-color: var(--light-hover);
+    border: 1px solid var(--light-hover);
     border-radius: 50px;
     transition: all .6s ease;
 }
@@ -86,4 +92,43 @@
 /* return here */
 .login {
     margin-right: 20px;
+}
+
+.first-section-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-section-info .header {
+    width: 100%;
+    padding-bottom: 25px;
+    font-size: 3.2em;
+    font-weight: var(--light-weight);
+}
+
+.first-section-info h4 {
+    padding-bottom: 35px;
+    font-weight: var(--light-weight);
+}
+
+.center-buttons {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn {
+    margin-right: 10px;
+    background-color: #fff;
+    color: var(--red-font);
+    border-radius: 50px;
+}
+
+.learn-more-btn {
+    margin-left: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
 }
