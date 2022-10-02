@@ -17,12 +17,15 @@
     --light-weight: 300;
     --bold-weight: 700;
     --red-font: hsl(356, 100%, 66%);
+    --dark-blue-font: hsl(208, 49%, 24%);
 }
 
 .first-container {
     width: 100%;
     margin: 0 auto;
-    background: linear-gradient(90deg, var(--very-light-red) , var(--light-red));
+    background: url(/images/bg-pattern-intro-desktop.svg) left no-repeat , linear-gradient(90deg, var(--very-light-red) , var(--light-red));
+    background-size: 150%;
+    border-radius: 0px 0px 0px 120px;
 }
 
 .navbar,
@@ -34,7 +37,7 @@
 .navbar {
     width: 80%;
     margin: 0 auto;
-    padding: 60px 0 90px 0;
+    padding: 40px 0 90px 0;
     justify-content: space-between;
 }
 
@@ -59,7 +62,7 @@
 .navigation-container p:hover {
     cursor: pointer;
     text-decoration: underline;
-    transform: all .8s ease;
+    transform: all .3s ease;
 }
 
 .login,
@@ -68,6 +71,7 @@
 .learn-more-btn {
     text-align: center;
     padding: 15px 30px;
+    border-radius: 50px;
     transition: all .3s ease;
 }
 
@@ -78,7 +82,7 @@
     cursor: pointer;
     color: #fff;
     background-color: var(--light-hover);
-    border: 1px solid var(--light-hover);
+    /* border: 1px solid var(--light-hover); */
     border-radius: 50px;
     transition: all .6s ease;
 }
@@ -131,4 +135,51 @@
     margin-left: 10px;
     border: 1px solid #fff;
     border-radius: 50px;
+}
+
+
+/* SECOND CONTAINER */
+.second-container h3 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 1.78em;
+    font-weight: var(--bold-weight);
+    color: var(--dark-blue-font);
+}
+
+.two-column-section-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-paragraphs,
+.column-img {
+    width: 50%;
+}
+
+.column-paragraphs h3,
+.column-paragraphs p {
+    padding: 0px 0px 20px 50px;
+    text-align: left;
+    line-height: 21px;
+    color: var(--dark-blue-font);
+}
+
+.column-paragraphs h3 {
+    padding-top: 100px;
+}
+
+.column-img {
+    position: relative;
+}
+
+.column-img img {
+    width: 130%;
+    height: auto;
+    padding-left: 40px;
+    position: absolute;
+    bottom: -105px;
+    z-index: 10;
+    clip: rect();
 }
