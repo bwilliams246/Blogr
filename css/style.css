@@ -13,6 +13,7 @@
     --light-hover: hsl(355, 100%, 74%);
     --very-dark-gray-blue: hsl(237, 17%, 21%);
     --very-dark-desaturated-blue: hsl(237, 23%, 32%);  
+    --very-dark-black-blue-footer: hsl(240, 10%, 16%);
     /* font colors / sizes */
     --light-weight: 300;
     --bold-weight: 700;
@@ -191,7 +192,6 @@ body {
 
 .column-img {
     width: 50%;
-    height: auto;
     padding-left: 40px;
     background: url(/images/illustration-editor-desktop.svg) left no-repeat;
     background-size: 100%;
@@ -256,4 +256,34 @@ body {
     background-position: left;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--very-dark-black-blue-footer);
+}
+
+.footer-logo,
+.footer-col {
+    padding: 50px 0px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h3 {
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.footer-col a {
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #f1f1f1;
 }
