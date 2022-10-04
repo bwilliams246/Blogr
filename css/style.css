@@ -166,10 +166,13 @@ body {
 .two-column-section-one {
     width: 90%;
     margin: 0 0 0 auto;
+    padding-bottom: 100px;
 }
 
-.column-paragraphs,
-.column-img,
+.column-paragraphs {
+    width: 43%;
+}
+
 .column-paragraphs-three,
 .column-img-three {
     width: 50%;
@@ -190,13 +193,16 @@ body {
     padding-top: 100px;
 }
 
+.last-parag {
+    padding-bottom: 10%!important;
+}
+
 .column-img {
     width: 50%;
-    padding-left: 40px;
-    background: url(/images/illustration-editor-desktop.svg) left no-repeat;
-    background-size: 100%;
+    background: url(/images/illustration-editor-desktop.svg) no-repeat;
+    background-size: 128%;
+    background-position: left -20% top 50%;
     z-index: 10;
-    overflow: hidden;
 }
 
 /* THIRD CONTAINER */
@@ -252,9 +258,9 @@ body {
 
 .column-img-three {
     width: 50%;
-    background: url(/images/illustration-laptop-desktop.svg);
-    background-position: left;
-    background-size: 100%;
+    background: url(/images/illustration-laptop-desktop.svg) no-repeat;
+    background-size: 128%;
+    background-position: right -20% top 50%;
     background-repeat: no-repeat;
 }
 
