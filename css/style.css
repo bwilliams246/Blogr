@@ -26,7 +26,9 @@ body {
 }
 
 .hide {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in;
 }
 
 /* FIRST CONTAINER */
@@ -66,7 +68,7 @@ body {
     margin: 0 10px;
     font-size: 14px;
     font-weight: var(--light-weight);
-    transform: all .8s ease;
+    transform: all .3s ease;
 }
 
 .navigation-container p:hover {
@@ -90,6 +92,7 @@ body {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 2px 5px 12px;
     border-radius: 5px;
+    transition: all .3s ease-in;
 }
 
 .extra-nav-info p {padding: 12px 20px 12px 5px;
@@ -353,6 +356,10 @@ body {
         cursor: pointer;
     }
 
+    .mobile-menu {
+        
+    }
+
     .first-section-info .header {
         font-size: 2.3em;
     }
@@ -421,7 +428,7 @@ body {
 
 
 /* MOBILE STYLES */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375.98px) {
     .column-img,
     .column-img-three {
         width: 100%;
