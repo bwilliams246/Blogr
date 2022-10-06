@@ -31,6 +31,12 @@ body {
     transition: all .3s ease-in;
 }
 
+.hide-mobile {
+    height: 0;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
 /* FIRST CONTAINER */
 .first-container {
     width: 100%;
@@ -49,7 +55,7 @@ body {
 .navbar {
     width: 80%;
     margin: 0 auto;
-    padding: 40px 0 90px 0;
+    padding: 40px 0 0px 0;
     justify-content: space-between;
 }
 
@@ -146,6 +152,7 @@ body {
 .first-section-info {
     width: 80%;
     margin: 0 auto;
+    padding-top: 90px;
     text-align: center;
 }
 
@@ -356,8 +363,106 @@ body {
         cursor: pointer;
     }
 
+    .mobile-menu-container {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+
     .mobile-menu {
-        
+        position: absolute;
+        width: 100%;
+        min-height: 75vh;
+        margin-top: 20px;
+        padding-top: 30px;
+        background-color: #fff;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 4px;
+        z-index: 20;
+    }
+
+    .mobile-options {
+        min-height: 50vh;
+    }
+
+    .mobile-sub-container {
+        padding-bottom: 15px;
+    }
+
+    .mobile-sub-container p {
+        color: #000;
+    }
+
+    .mobile-sub-container p img {
+        margin-left: 8px;
+    }
+
+    .mobile-sub-container p:hover,
+    .mobile-sub-container p img:hover {
+        cursor: pointer;
+    }
+
+    .mobile-extra-nav-info {
+        width: 88%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #f1f1f1;
+        text-align: center;
+        transition: all .3s ease-out;
+    }
+
+    .mobile-extra-nav-info p {
+        padding: 10px 0px;
+        color: var(--dark-blue-font);
+    }
+
+    .mobile-extra-nav-info p:hover {
+        cursor: pointer;
+    }
+
+    .hide-mobile {
+        height: 0;
+        opacity: 0;
+        transition: all .3s ease-out;
+    }
+
+    .divider {
+        width: 88%;
+        min-height: 1px;
+        margin: 0 auto;
+        background-color: #999;
+    }
+
+    .mobile-buttons {
+        width: 45%;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
+    .mobile-login-btn {
+        padding-bottom: 10px;
+        color: var(--dark-blue-font);
+        font-weight: var(--bold-weight);
+    }
+
+    .mobile-sign-up-btn {
+        color: #fff;
+        padding: 8px 30px;
+        background: linear-gradient(90deg, var(--very-light-red) , var(--light-red));
+        border: 1px solid var(--very-light-red);
+        border-radius: 50px;
+        transition: all .3s ease;
+    }
+
+    .mobile-sign-up-btn:hover,
+    .mobile-login-btn:hover {
+        cursor: pointer;
+    }
+
+    .mobile-sign-up-btn:hover {
+        background-color: var(--very-light-red);
+        border: 1px solid var(--very-light-red);
     }
 
     .first-section-info .header {
